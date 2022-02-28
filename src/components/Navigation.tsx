@@ -9,15 +9,15 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import ContactUsModal from "./ContactUsModal";
-import { constants } from "./constants";
+import constants from "./constants";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
-  let home = "/";
-  let otherUrl = window.location.pathname;
+  const home = "/";
+  const otherUrl = window.location.pathname;
 
   return (
     <nav className={home === otherUrl ? "nav-alt" : ""}>

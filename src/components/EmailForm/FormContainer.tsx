@@ -1,11 +1,7 @@
 import { FormStatus } from "./FormStatus";
 import Form from "./Form";
 import axios from "axios";
-import {
-  ChangeEventHandler,
-  FormEventHandler,
-  useState,
-} from "react";
+import { ChangeEventHandler, FormEventHandler, useState } from "react";
 
 export default function FormContainer() {
   const [input, setInput] = useState({});

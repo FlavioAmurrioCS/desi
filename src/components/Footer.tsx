@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { constants } from "./constants";
+import constants from "./constants";
 
-const Footer = () => {
+import twitterIcon from "../img/social-media-svg/twitter.png";
+import instagramIcon from "../img/social-media-svg/instagram.png";
+import facebookIcon from "../img/social-media-svg/facebook.png";
+import linkedinIcon from "../img/social-media-svg/linkedin-logo.png";
+
+function Footer() {
   return (
     <div className="footer">
       <div className="footer__inner footer__navigation">
@@ -54,37 +59,21 @@ const Footer = () => {
         </div>
         <div className="footer__socialmedia">
           <a href="https://twitter.com/">
-            <img
-              className="footer_icon"
-              src={require("../img/social-media-svg/twitter.png")}
-              alt="twitter"
-            />
+            <img className="footer_icon" src={twitterIcon} alt="twitter" />
           </a>
           <a href="https://www.instagram.com/">
-            <img
-              className="footer_icon"
-              src={require("../img/social-media-svg/instagram.png")}
-              alt="instagram"
-            />
+            <img className="footer_icon" src={instagramIcon} alt="instagram" />
           </a>
           <a href="https://www.facebook.com/">
-            <img
-              className="footer_icon"
-              src={require("../img/social-media-svg/facebook.png")}
-              alt="facebook"
-            />
+            <img className="footer_icon" src={facebookIcon} alt="facebook" />
           </a>
           <a href="https://www.linkedin.com/">
-            <img
-              className="footer_icon"
-              src={require("../img/social-media-svg/linkedin-logo.png")}
-              alt="linked in"
-            />
+            <img className="footer_icon" src={linkedinIcon} alt="linked in" />
           </a>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Footer;

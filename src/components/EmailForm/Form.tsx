@@ -1,6 +1,6 @@
 import { ChangeEventHandler, FormEventHandler, useState } from "react";
 import { Button, Form, FormGroup, Input, Label } from "reactstrap";
-import { constants } from "../constants";
+import constants from "../constants";
 
 interface MyFormInput {
   fullName?: string;
@@ -15,13 +15,13 @@ interface MyFormInput {
 type FormComponentProps = {
   handleChange: ChangeEventHandler<HTMLInputElement>;
   onSubmit: FormEventHandler<HTMLFormElement>;
-  formSubmitted:boolean
+  formSubmitted: boolean;
 };
 
 export default function FormComponent({
   handleChange,
   onSubmit,
-  formSubmitted
+  formSubmitted,
 }: FormComponentProps) {
   const [input] = useState<MyFormInput>({});
 
