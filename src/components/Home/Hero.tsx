@@ -3,12 +3,12 @@ import React from "react";
 // import receptionUp from "../../img/receptionUP.png";
 // import receptionDown from "../../img/receptionDown.png";
 
-type HeroType= {
-  isOpen: boolean,
-  toggleTable:()=>void
-}
+type HeroType = {
+  isOpen: boolean;
+  toggleTable: () => void;
+};
 
-export default function Hero({isOpen, toggleTable}: HeroType): JSX.Element {
+export default function Hero({ isOpen, toggleTable }: HeroType): JSX.Element {
   return (
     <div className="hero__container">
       <div className="container__inner">
@@ -43,5 +43,4 @@ export default function Hero({isOpen, toggleTable}: HeroType): JSX.Element {
       </div>
     </div>
   );
-};
-
+}
