@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Button, Modal, ModalBody } from "reactstrap";
-import FormContainer from "./EmailForm/FormContainer";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
-import { constants } from "./constants";
+import FormContainer from "./EmailForm/FormContainer";
+import constants from "./constants";
 
 function ContactUsModal() {
   const [modal, setModal] = useState(false);
@@ -14,11 +14,7 @@ function ContactUsModal() {
       <Button className="contact-btn" onClick={toggle}>
         Contact Us
       </Button>
-      <Modal
-        className="project-modal"
-        isOpen={modal}
-        toggle={toggle}
-      >
+      <Modal className="project-modal" isOpen={modal} toggle={toggle}>
         <ModalBody>
           <div className="address-container">
             <span>

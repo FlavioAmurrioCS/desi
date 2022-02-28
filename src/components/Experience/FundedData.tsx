@@ -1,9 +1,8 @@
-const acore = require("../../img/projects/funded/acore.png");
-const acoreProject = [
-  require("../../img/projects/suite_1800/img1.jpg"),
-  require("../../img/projects/suite_1800/img2.jpg"),
-  require("../../img/projects/suite_1800/img3.jpg"),
-];
+import acore from "../../img/projects/funded/acore.png";
+import acore1 from "../../img/projects/suite_1800/img1.jpg";
+import acore2 from "../../img/projects/suite_1800/img2.jpg";
+import acore3 from "../../img/projects/suite_1800/img3.jpg";
+const acoreProject = [acore1, acore2, acore3];
 
 type FundedWork = {
   projectTitle: string;
@@ -18,7 +17,7 @@ type FundedWork = {
   requestedBy?: string;
 };
 
-export const fundedWork: FundedWork[] = [
+const fundedWork: FundedWork[] = [
   {
     projectTitle: "ACORE",
     locationFull: "1150 Connecticut Avenue NW Suite 401, Washington, DC 20036.",
@@ -34,3 +33,5 @@ export const fundedWork: FundedWork[] = [
     btnImage: acore,
   },
 ];
+
+export default fundedWork;

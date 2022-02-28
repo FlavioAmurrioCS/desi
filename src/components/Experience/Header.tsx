@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { constants } from "../constants";
+import constants from "../constants";
 
 export default function Header() {
   return (
