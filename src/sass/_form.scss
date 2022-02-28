@@ -1,0 +1,82 @@
+@import './variables';
+.form-status {
+  color: $darkblue;
+  height: 500px;
+  padding: 10em;
+  svg {
+    width: 100px;
+    display: block;
+    margin: 40px auto 0;
+  }
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+  .path.circle {
+    animation: dash .9s ease-in-out;
+  }
+  
+  .path.check {
+    stroke-dashoffset: -100;
+    animation: check 3s ease-in;
+    animation-iteration-count: 1;
+
+  }
+  p {
+    margin-top: 3em;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.confirmation-form-container {
+  position: relative;
+  padding: 30px;
+  h4 {
+    @include font-component($darkblue, $size: $subheading, );
+    font-weight: bold;
+  }
+  input {
+    border: 1px solid #707070;
+    border-radius: 0px;
+    width: 95%;
+  }
+  label[for="message"] {
+    width: 100%;
+  }
+  label {
+    min-width: 50%;
+    display: inline-block;
+  }
+}
+
+.checkbox {
+  border: 1px solid $darkblue;
+  background-color: $darkblue;
+  label{ 
+    position: relative;
+    padding:0.5em 1em;
+    @include font-component($darkblue, $body-fontsize, center, uppercase);
+    font-weight: normal;
+  }
+  input[type="checkbox"] {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.form-submit-btn {
+  float: right;
+  width: 33%;
+  border-radius: 0px !important;
+  background-color: $darkblue !important;
+  @include font-component($icewhite, $body-fontsize, center, uppercase);
+
+}
+
+.subject-type {
+  h5 {    
+    @include font-component($darkblue, $body-fontsize, center, uppercase);
+    font-weight: bold;
+  }
+}
