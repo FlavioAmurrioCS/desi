@@ -10,19 +10,6 @@ import About from "./About/About";
 import Experience from "./Experience/ExperienceContainer";
 import Services from "./Services/Services";
 
-// const Home = asyncComponent(() =>
-//   import("./Home/Home").then((module) => module.default)
-// );
-// const About = asyncComponent(() =>
-//   import("./About/About").then((module) => module.default)
-// );
-// const Services = asyncComponent(() =>
-//   import("./Services/Services").then((module) => module.default)
-// );
-
-// const Experience = asyncComponent(() =>
-//   import("./Experience/ExperienceContainer").then((module) => module.default)
-// );
 export default function App() {
   return (
     <div className="App">

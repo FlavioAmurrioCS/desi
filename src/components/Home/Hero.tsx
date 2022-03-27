@@ -1,7 +1,7 @@
 import React from "react";
-// import { Transform, Fade } from "react-animation-components";
-// import receptionUp from "../../img/receptionUP.png";
-// import receptionDown from "../../img/receptionDown.png";
+import { Transform, Fade } from "react-animation-components";
+import receptionUp from "../../img/receptionUP.png";
+import receptionDown from "../../img/receptionDown.png";
 
 type HeroType = {
   isOpen: boolean;
@@ -12,11 +12,9 @@ export default function Hero({ isOpen, toggleTable }: HeroType): JSX.Element {
   return (
     <div className="hero__container">
       <div className="container__inner">
-        {/* <Transform
+        <Transform
           className={
-            isOpen
-              ? "reception close-table-top"
-              : "reception open-table-top"
+            isOpen ? "reception close-table-top" : "reception open-table-top"
           }
           enterTransform="translateY(-80px)"
           in
@@ -39,7 +37,7 @@ export default function Hero({ isOpen, toggleTable }: HeroType): JSX.Element {
           <button onClick={toggleTable} className="hero__prop-img">
             <img src={receptionDown} alt="Line art reception table" />
           </button>
-        </Transform> */}
+        </Transform>
       </div>
     </div>
   );

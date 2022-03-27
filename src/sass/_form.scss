@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 .form-status {
   color: $darkblue;
   height: 500px;
@@ -13,14 +13,13 @@
     stroke-dashoffset: 0;
   }
   .path.circle {
-    animation: dash .9s ease-in-out;
+    animation: dash 0.9s ease-in-out;
   }
-  
+
   .path.check {
     stroke-dashoffset: -100;
     animation: check 3s ease-in;
     animation-iteration-count: 1;
-
   }
   p {
     margin-top: 3em;
@@ -33,7 +32,7 @@
   position: relative;
   padding: 30px;
   h4 {
-    @include font-component($darkblue, $size: $subheading, );
+    @include font-component($darkblue, $size: $subheading);
     font-weight: bold;
   }
   input {
@@ -53,9 +52,9 @@
 .checkbox {
   border: 1px solid $darkblue;
   background-color: $darkblue;
-  label{ 
+  label {
     position: relative;
-    padding:0.5em 1em;
+    padding: 0.5em 1em;
     @include font-component($darkblue, $body-fontsize, center, uppercase);
     font-weight: normal;
   }
@@ -71,11 +70,10 @@
   border-radius: 0px !important;
   background-color: $darkblue !important;
   @include font-component($icewhite, $body-fontsize, center, uppercase);
-
 }
 
 .subject-type {
-  h5 {    
+  h5 {
     @include font-component($darkblue, $body-fontsize, center, uppercase);
     font-weight: bold;
   }

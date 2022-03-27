@@ -2,84 +2,82 @@
 @import "./mixins";
 
 h2 {
-    @include header;
-    text-align: center;
-  }
+  @include header;
+  text-align: center;
+}
 
 .centered-block {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .top-title-text {
-    @include font-component($charcoal, 2rem, center, uppercase);
-    font-weight: lighter;
-    padding: 1em;
+  @include font-component($charcoal, 2rem, center, uppercase);
+  font-weight: lighter;
+  padding: 1em;
 }
 
 .title-divider {
-    border: 0.75px solid $smokeyblack;
-} 
-
-.border-color-reset {
-    background: none !important;
-    border: none !important;
+  border: 0.75px solid $smokeyblack;
 }
 
+.border-color-reset {
+  background: none !important;
+  border: none !important;
+}
 
 .scale-up {
-    &:hover {
-        transform: scale(1.1);
-      }
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .div__brand {
-    margin: 0 auto !important;
-    padding: 25px;
-    @include font-component($alignment: center, $transform: uppercase);
+  margin: 0 auto !important;
+  padding: 25px;
+  @include font-component($alignment: center, $transform: uppercase);
 }
 
 .btn__contact {
-    padding: 0.5em;
-    margin: auto 1em;
-    height: 50px !important;
-    border: 1px solid $icewhite;
-    overflow: hidden;
-    position: relative;
-    color: $icewhite;
-    button {
-      height: 100% !important;
-      padding: 0;
-      margin: 0;
-    }
-    
-    a {
-      z-index: 20;
-    }
-    
-    &:after {
-      background: #fff;
-      content: "";
-      height: 155px;
-      left: -75px;
-      opacity: .2;
-      position: absolute;
-      top: -50px;
-      transform: rotate(35deg);
-      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-      width: 50px;
-      z-index: -10;
-    }
+  padding: 0.5em;
+  margin: auto 1em;
+  height: 50px !important;
+  border: 1px solid $icewhite;
+  overflow: hidden;
+  position: relative;
+  color: $icewhite;
+  button {
+    height: 100% !important;
+    padding: 0;
+    margin: 0;
   }
 
-  .container-width {
-    width: 80vw;
+  a {
+    z-index: 20;
   }
-  
-  .btn__contact:hover {
-    
-    &:after {
-      left: 120%;
-      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    }
+
+  &:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
   }
+}
+
+.container-width {
+  width: 80vw;
+}
+
+.btn__contact:hover {
+  &:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}

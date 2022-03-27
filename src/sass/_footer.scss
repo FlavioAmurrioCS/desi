@@ -1,66 +1,67 @@
 @import "./variables";
 @import "./mixins";
 
-    .footer {
-      color: $icewhite;
+.footer {
+  color: $icewhite;
+}
+
+.footer__inner {
+  background-color: $charcoal;
+  text-align: center;
+}
+
+.footer__brand__img {
+  width: 15%;
+  margin: 1em;
+}
+
+.footer__navigation {
+  @include flex();
+  .footer__links {
+    a {
+      padding: 0 2em;
+      @include font-component(
+        $icewhite,
+        $alignment: center,
+        $transform: uppercase
+      );
     }
-
-    .footer__inner {
-      background-color: $charcoal;
-      text-align: center;
+  }
+  .footer__contact {
+    margin: 1em 0;
+    @include font-component($icewhite, $alignment: center);
+    a {
+      color: $yellow;
     }
-    
-   .footer__brand__img {
-     width: 15%;
-     margin: 1em;
-   }
+  }
+}
 
-    .footer__navigation {
-      @include flex();
-      .footer__links {
-        a {
-          padding: 0 2em;
-          @include font-component($icewhite, $alignment: center, $transform: uppercase);
-        }
-      }
-      .footer__contact {
-        margin: 1em 0;
-        @include font-component($icewhite, $alignment: center);
-        a {
-          color: $yellow;
-        }
+.footer__logistics {
+  background-color: $nightblack;
+  @include flex($direction: row, $wrap: wrap);
+  div {
+    padding: 0.5em;
+    display: inline-flex;
+  }
+  .footer__socialmedia {
+    text-align: right;
+  }
+  .footer_icon {
+    width: 24px;
+    padding: 0.3rem;
+  }
+}
 
-      }
-    }
-
-    .footer__logistics {
-      background-color: $nightblack;
-      @include flex($direction: row, $wrap: wrap);
-      div {
-        padding: 0.5em;
-        display: inline-flex;
-      }
-      .footer__socialmedia {
-        text-align: right;
-      }
-      .footer_icon {
-          width: 24px;
-          padding: 0.3rem;
-        }
-    }
-
-
-    .pretend-footer {  
-      padding: 3em;
-      @include flex(column);
-      h4 {
-
-        @include font-component($darkblue, 1em, center, uppercase);
-      }
-      .btn {
-        @extend .centered-block;
-        background-color: transparent;
-        color: $darkblue;
-        border: none;
-      }
-    }
+.pretend-footer {
+  padding: 3em;
+  @include flex(column);
+  h4 {
+    @include font-component($darkblue, 1em, center, uppercase);
+  }
+  .btn {
+    @extend .centered-block;
+    background-color: transparent;
+    color: $darkblue;
+    border: none;
+  }
+}

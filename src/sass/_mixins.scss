@@ -1,43 +1,63 @@
-@import './variables';
+@import "./variables";
 
-@mixin flex($direction: column, $wrap: nowrap, $horizontal-pos: center, $vertical-pos: center) {
-    display: flex;
-    flex-flow: $direction $wrap;
-    justify-content: $horizontal-pos;
-    align-content: $vertical-pos;
-   
+@mixin flex(
+  $direction: column,
+  $wrap: nowrap,
+  $horizontal-pos: center,
+  $vertical-pos: center
+) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $horizontal-pos;
+  align-content: $vertical-pos;
 }
 
-@mixin bg-img-full( $path, $color: transparent, $repeat: no-repeat, $position: 0 0, $size: null ) {
-    background: $color url('#{$path--image}/#{$path}') $repeat $position;
-    background-size: $size;
-  }
+@mixin bg-img-full(
+  $path,
+  $color: transparent,
+  $repeat: no-repeat,
+  $position: 0 0,
+  $size: null
+) {
+  background: $color url("#{$path--image}/#{$path}") $repeat $position;
+  background-size: $size;
+}
 
-@mixin btn($border-color: white, $bkgrd-clr: transparent, $hover-color: white, $txtclr: black) {
-    border-radius: 0;
-    padding: 15px;
-    width: 200px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border: 1px solid $border-color;
-    background-color: $bkgrd-clr;
-    &:hover {
-      background-color: white;
-      color: $txtclr;
-    }
+@mixin btn(
+  $border-color: white,
+  $bkgrd-clr: transparent,
+  $hover-color: white,
+  $txtclr: black
+) {
+  border-radius: 0;
+  padding: 15px;
+  width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid $border-color;
+  background-color: $bkgrd-clr;
+  &:hover {
+    background-color: white;
+    color: $txtclr;
   }
-  
-  @mixin header($text-size: 2em, $color: $darkblue) {
-      font-size: $text-size;
-      text-transform: uppercase;
-      text-align: center;
-      color: $color; 
-      font-weight: bolder;    
-  }
+}
 
-  @mixin font-component($color: $icewhite, $size: $body-fontsize, $alignment: left, $transform: normal) {
-      color: $color;
-      font-size: $size;
-      text-align: $alignment;
-      text-transform: $transform;
-  }
+@mixin header($text-size: 2em, $color: $darkblue) {
+  font-size: $text-size;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color;
+  font-weight: bolder;
+}
+
+@mixin font-component(
+  $color: $icewhite,
+  $size: $body-fontsize,
+  $alignment: left,
+  $transform: normal
+) {
+  color: $color;
+  font-size: $size;
+  text-align: $alignment;
+  text-transform: $transform;
+}

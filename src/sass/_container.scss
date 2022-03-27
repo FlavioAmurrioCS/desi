@@ -2,7 +2,6 @@
 @import "./mixins";
 @import "./abstract";
 
-
 .app-container {
   position: relative;
   background-color: rgba($color: $darkblue, $alpha: 0.03);
@@ -34,226 +33,223 @@
     width: 90vw;
     max-width: 500px;
     strong {
-        font-weight: 900;
-      }
+      font-weight: 900;
+    }
     .subtitle {
       font-size: 1rem;
     }
   }
-
 }
 
 .about-container {
   @include flex();
   align-items: center;
-  }
+}
 
-  .statement-container {
-    @extend .container-width;
-    @include flex();
-    padding: 3% 5%;
-    .header {
-      padding: 5%;
-      position: relative;
-      border: 4px solid $darkblue;
-      text-align: left;
-      margin-top: 20%;
-      @media screen and (max-width: 600px) {
-       margin-top: 50%;
+.statement-container {
+  @extend .container-width;
+  @include flex();
+  padding: 3% 5%;
+  .header {
+    padding: 5%;
+    position: relative;
+    border: 4px solid $darkblue;
+    text-align: left;
+    margin-top: 20%;
+    @media screen and (max-width: 600px) {
+      margin-top: 50%;
     }
-      h2 {
-        @include header(3rem);
-        margin-left: 35%;
-        margin-top: -2%;
-        text-align: left;
-        @media screen and (max-width: 768px) {
-            font-size: 30px;
-            text-align: center;
-            margin: 0 auto;
-        }
-        
+    h2 {
+      @include header(3rem);
+      margin-left: 35%;
+      margin-top: -2%;
+      text-align: left;
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+        text-align: center;
+        margin: 0 auto;
       }
-      img  {
-        position: absolute;
-        width: 30vw;
-        right: 65%;
-        top: -90%;
-        @media screen and (min-width: 2560px) {
-          top: -130%;
+    }
+    img {
+      position: absolute;
+      width: 30vw;
+      right: 65%;
+      top: -90%;
+      @media screen and (min-width: 2560px) {
+        top: -130%;
       }
       @media screen and (width: 1024px) {
         top: -50%;
-    }
       }
     }
-    .body {
-      margin-top: 8%;
-      padding: 1rem;
-    }   
   }
- 
-  .team-container {
-    @include flex();
-    a:hover {
-      text-decoration: none;
-      color: $darkblue;
-    }
-
-
+  .body {
+    margin-top: 8%;
+    padding: 1rem;
   }
+}
 
-
-  .member-row {
-    padding: 10% 0;
-    padding-top: 10%;
-    margin: 0 auto;
-    @extend .container-width;
-    @include flex($direction: row, $wrap: wrap);
-    @media screen and (max-width: 768px) {
-      @include flex($direction: column, $horizontal-pos: center);
-
-  }
-  }
-
-
-
-  .member-title-card  {
-    padding: 1em;
-    .cardimage-container {
-      width: 100%;
-      height: calc(250px + 9vmin);
-      @include flex();
-      overflow: hidden;
-    }
-        @media screen and (max-width: 425px) {
-      }
-  
-  }
-
-  .individual-view {
+.team-container {
+  @include flex();
+  a:hover {
+    text-decoration: none;
     color: $darkblue;
-    letter-spacing: 0.02rem;
-    @extend .container-width;
-    .card-body {
-      padding: 1.25rem 0;
-      h5, h6 {text-align: left !important;}
-    }
-
-    h6 {
-      font-weight: bolder;
-      text-transform: uppercase;
-    }
-
-    button {
-      @extend .border-color-reset;
-      color: $darkblue;
-      margin-top: 10%;
-      padding: 0.375rem 0;
-      text-transform: uppercase;
-    }
   }
+}
 
-  .inner_col {
-    padding: 1em;
-    width: calc(250px + 9vmax);
-    @include flex($horizontal-pos: none);
-    @media screen and (max-width: 768px) {
-     align-self: center;
+.member-row {
+  padding: 10% 0;
+  padding-top: 10%;
+  margin: 0 auto;
+  @extend .container-width;
+  @include flex($direction: row, $wrap: wrap);
+  @media screen and (max-width: 768px) {
+    @include flex($direction: column, $horizontal-pos: center);
   }
-  
-  }
-  .inner_col:nth-of-type(1){
-    @media screen and (max-width: 600px) {
-      margin-top: 20%;
-   }
-  }
+}
 
-  .services-container {
+.member-title-card {
+  padding: 1em;
+  .cardimage-container {
+    width: 100%;
+    height: calc(250px + 9vmin);
     @include flex();
-    align-items: center;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 425px) {
+  }
+}
 
+.individual-view {
+  color: $darkblue;
+  letter-spacing: 0.02rem;
+  @extend .container-width;
+  .card-body {
+    padding: 1.25rem 0;
+    h5,
+    h6 {
+      text-align: left !important;
+    }
   }
 
-  .main-services-container {
-    padding-top: 10%;
-    width: 90vw;
+  h6 {
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  button {
+    @extend .border-color-reset;
+    color: $darkblue;
+    margin-top: 10%;
+    padding: 0.375rem 0;
+    text-transform: uppercase;
+  }
+}
+
+.inner_col {
+  padding: 1em;
+  width: calc(250px + 9vmax);
+  @include flex($horizontal-pos: none);
+  @media screen and (max-width: 768px) {
+    align-self: center;
+  }
+}
+.inner_col:nth-of-type(1) {
+  @media screen and (max-width: 600px) {
+    margin-top: 20%;
+  }
+}
+
+.services-container {
+  @include flex();
+  align-items: center;
+}
+
+.main-services-container {
+  padding-top: 10%;
+  width: 90vw;
+  .inner__row {
+    @include flex();
+    position: relative;
+  }
+  .row__card {
+    padding: 8em 2em;
+    background: $darkblue !important;
+    color: $icewhite;
+    width: 35vw;
+    min-width: 300px;
+    @media screen and (max-width: 768px) {
+      margin-top: 20%;
+      width: 90vw;
+    }
+    h1 {
+      @include header(2em, $icewhite);
+      text-align: left;
+      font-weight: bolder;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 20%;
+      width: 90vw;
+    }
+  }
+
+  .services-img {
+    position: absolute;
+    z-index: -1;
+    height: 80%;
+    width: auto;
+    top: 10%;
+    left: 35%;
+  }
+}
+
+.add-services-container {
+  @include flex($direction: row, $wrap: nowrap);
+  width: 90vw;
+  padding-bottom: 15vh;
+  .service-card {
+    width: 100%;
+    background-color: $darkblue;
+
     .inner__row {
-      @include flex();
-      position: relative;
+      margin-top: 5%;
+      align-items: flex-start;
+      @include flex($direction: row, $wrap: wrap);
+      @media screen and (max-width: 768px) {
+        @include flex();
+      }
     }
-    .row__card {
-      padding: 8em 2em;
-      background: $darkblue !important;
-      color: $icewhite;
-      width: 35vw;
+    h1 {
+      @include font-component(
+        $color: $icewhite,
+        $size: $heading,
+        $alignment: left,
+        $transform: uppercase
+      );
+      font-weight: bolder;
+    }
+    .subtitle {
+      font-style: italic;
+    }
+    ul,
+    li {
+      list-style-type: none;
+      list-style: none;
+      padding-left: 0;
+    }
+    .inner__col {
+      width: 33%;
       min-width: 300px;
-      @media screen and (max-width: 768px) {
-        margin-top: 20%;
-        width: 90vw;
-     }
-      h1 {
-        @include header(2em, $icewhite);
-        text-align: left;
-        font-weight: bolder;
-      }
-      @media screen and (max-width: 768px) {
-        margin-top: 20%;
-        width: 90vw;
-     }
-    }
-
-    .services-img {
-      position: absolute;
-      z-index: -1;
-      height: 80%;
-      width: auto;
-      top: 10%;
-      left: 35%;
+      padding: 0 2em 4em 1em;
     }
   }
-
-  .add-services-container {
-    @include flex($direction: row, $wrap: nowrap);
-    width: 90vw;
-    padding-bottom: 15vh;
-    .service-card {
-      width: 100%;
-      background-color: $darkblue;
-            
-     .inner__row {
-        margin-top: 5%;
-        align-items: flex-start;
-        @include flex($direction: row, $wrap: wrap);
-        @media screen and (max-width: 768px) {
-          @include flex();
-       }
-      }
-      h1 {
-        @include font-component($color: $icewhite, $size: $heading, $alignment: left, $transform: uppercase);
-        font-weight: bolder;
-      }
-      .subtitle {
-        font-style: italic;
-      }
-      ul,li {
-        list-style-type: none;
-        list-style: none;
-        padding-left: 0;      
-      }
-      .inner__col {
-        width: 33%;
-        min-width: 300px;
-        padding: 0 2em 4em 1em;
-      }
-
-    }
-    .inner__row:nth-child(2) {
-      width: 30%;
-      img {
-        height: 100%;
-      }
+  .inner__row:nth-child(2) {
+    width: 30%;
+    img {
+      height: 100%;
     }
   }
+}
 
 .experience-container {
   @include flex();
@@ -290,7 +286,7 @@
       font-weight: bolder;
       margin: 1em 0;
     }
-    .subtitle{
+    .subtitle {
       margin: 3em 0;
     }
     .project-gallery {
@@ -331,24 +327,23 @@
         height: calc(150px + 5vmax);
         background: none;
         border: none;
-        background-size:100%;
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
       }
     }
   }
-
 }
 
- .project-modal {
+.project-modal {
   .modal-header {
     background-color: $darkblue;
     h3 {
-      @include font-component($icewhite, calc(12px + 1vmax), left, uppercase );
+      @include font-component($icewhite, calc(12px + 1vmax), left, uppercase);
       font-weight: bolder;
     }
     p {
-      @include font-component($icewhite, $body-fontsize, left );
+      @include font-component($icewhite, $body-fontsize, left);
       font-style: italic;
       font-weight: light;
     }
@@ -359,19 +354,22 @@
       @include flex();
       .carousel-container {
         width: 100%;
-            }
-   }
-   .content {
-    width: 50%;
-    padding: 1em;
-    @media screen and (max-width: 768px) {
-      width: 100%;
+      }
     }
-    h4 {
-      @include font-component($darkblue, $size: $subheading, $transform: uppercase);
+    .content {
+      width: 50%;
+      padding: 1em;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      h4 {
+        @include font-component(
+          $darkblue,
+          $size: $subheading,
+          $transform: uppercase
+        );
+      }
     }
-
-   }
     .carousel-container {
       position: relative;
       width: 50%;
@@ -384,13 +382,13 @@
         margin: 0;
         justify-content: flex-start;
         li {
-         width: 100px;
-         height: 100px;
-         background-position: center;
-         background-size: cover;
-         background-repeat: no-repeat;
-         opacity: 1;
-       }
+          width: 100px;
+          height: 100px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 1;
+        }
       }
       .inactive-item {
         opacity: 0.5;
@@ -407,8 +405,8 @@
 
 .open-table-bottom {
   transition: transform 500ms ease 0ms;
-    transform: translateY(200px);
-    will-change: transform;
+  transform: translateY(200px);
+  will-change: transform;
 }
 
 .close-table-top {
@@ -419,8 +417,8 @@
 
 .close-table-bottom {
   transition: transform 500ms ease 0ms;
-    transform: translateY(-200px);
-    will-change: transform;
+  transform: translateY(-200px);
+  will-change: transform;
 }
 
 .contact-btn {
@@ -444,9 +442,9 @@
     border-bottom: none;
   }
   .modal-body {
-  margin: 0;
-  padding: 0;
-  height: 80vh;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
   }
   .address-container {
     height: 100%;
@@ -454,24 +452,23 @@
     width: 50%;
     @include bg-img-full($contact-us-img, $size: cover);
     span {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
       h3 {
         @include font-component($icewhite, $heading, center);
         font-weight: bolder;
       }
       a {
-        color: #FFCF4B;
+        color: #ffcf4b;
       }
-  }
+    }
     @media screen and (max-width: 768px) {
       width: 100%;
     }
-
   }
   .form {
     position: relative;
@@ -481,16 +478,16 @@
     }
   }
 }
- .form-group {
-   label {
-     display: block;
-     @include font-component($darkblue, $size: $label, $transform: uppercase);
-     font-weight: bold;
-   }
+.form-group {
+  label {
+    display: block;
+    @include font-component($darkblue, $size: $label, $transform: uppercase);
+    font-weight: bold;
+  }
 }
 
 .btn__contact-home {
   padding: 1em;
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 }
