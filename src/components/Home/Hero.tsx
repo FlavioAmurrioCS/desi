@@ -1,30 +1,21 @@
 import React from "react";
-import { Transform, Fade } from "react-animation-components";
+import { Slide, Fade } from "react-awesome-reveal";
 import receptionUp from "../../img/receptionUP.png";
 import receptionDown from "../../img/receptionDown.png";
 
-type HeroType = {
-  isOpen: boolean;
-  toggleTable: () => void;
-};
-
-export default function Hero({ isOpen, toggleTable }: HeroType): JSX.Element {
+export default function Hero(): JSX.Element {
   return (
     <div className="hero__container">
       <div className="container__inner">
-        <Transform
-          className={
-            isOpen ? "reception close-table-top" : "reception open-table-top"
-          }
-          enterTransform="translateY(-80px)"
-          in
-        >
-          <button onClick={toggleTable} className="hero__prop-img">
-            <img src={receptionUp} alt="Line art reception table" />
-          </button>
-        </Transform>
+        <Fade direction="down">
+          <img
+            src={receptionUp}
+            className="hero__prop-img"
+            alt="Line art reception table"
+          />
+        </Fade>
 
-        <Fade in enterOpacity={0.85}>
+        <Fade>
           <div className="title-card">
             <p className="title">
               <strong>Desi</strong> Electric
@@ -33,11 +24,13 @@ export default function Hero({ isOpen, toggleTable }: HeroType): JSX.Element {
             <p className="subtitle">DMV's Finest Electricians</p>
           </div>
         </Fade>
-        <Transform className="reception" enterTransform="translateY(80px)" in>
-          <button onClick={toggleTable} className="hero__prop-img">
-            <img src={receptionDown} alt="Line art reception table" />
-          </button>
-        </Transform>
+        <Fade direction="up">
+          <img
+            src={receptionDown}
+            className="hero__prop-img"
+            alt="Line art reception table"
+          />
+        </Fade>
       </div>
     </div>
   );

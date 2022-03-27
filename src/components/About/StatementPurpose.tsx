@@ -19,12 +19,6 @@ export default function StatementPurpose() {
       <div className="body">
         <p>{constants.STATMENT_PURPOSE}</p>
       </div>
-      <div className="pretend-footer">
-        <h4>Our Leadership</h4>
-        <Button>
-          <FaAngleDoubleDown />
-        </Button>
-      </div>
     </div>
   );
 }

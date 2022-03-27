@@ -53,8 +53,7 @@ function Footer() {
               {" "}
               {constants.COMPANY_TITLE}
             </a>{" "}
-            All Rights Reserved. | Web Design by{" "}
-            <a href="https://tamitchell.github.io/">Tasha Mitchell</a>
+            All Rights Reserved.
           </p>
         </div>
         <div className="footer__socialmedia">

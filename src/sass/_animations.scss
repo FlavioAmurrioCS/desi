@@ -1,3 +1,5 @@
+@import "./variables";
+
 svg {
   width: 100px;
   display: block;
@@ -22,5 +24,16 @@ svg {
   }
   100% {
     stroke-dashoffset: 900;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    top: $lamp-start-position;
+  }
+  100% {
+    opacity: 1;
+    top: $lamp-end-position;
   }
 }

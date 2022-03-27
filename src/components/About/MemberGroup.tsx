@@ -9,6 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import { FaAngleDoubleUp } from "react-icons/fa";
 import items from "./MembersData";
+import placeholder from "../../img/person_placeholder.svg";
 
 export default function MemberGroup() {
   return (
@@ -28,10 +29,9 @@ export default function MemberGroup() {
             <Card className="member-title-card scale-up">
               <div className="cardimage-container">
                 <CardImg
-                  top
                   width="100%"
-                  src={member.src}
-                  alt="Image Not Available"
+                  src={member.src || placeholder}
+                  alt={member.memberName}
                 />
               </div>
               <CardBody>
@@ -41,12 +41,6 @@ export default function MemberGroup() {
             </Card>
           </Link>
         ))}
-      </div>
-      <div className="pretend-footer">
-        <h4>Back to the Top</h4>
-        <Button>
-          <FaAngleDoubleUp />
-        </Button>
       </div>
     </div>
   );

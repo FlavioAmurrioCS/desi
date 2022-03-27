@@ -21,9 +21,6 @@
     box-shadow: none;
     border: none;
     max-width: 300px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   .title-card {
     @extend .centered-block;
@@ -55,10 +52,7 @@
     position: relative;
     border: 4px solid $darkblue;
     text-align: left;
-    margin-top: 20%;
-    @media screen and (max-width: 600px) {
-      margin-top: 50%;
-    }
+    margin-top: 15rem;
     h2 {
       @include header(3rem);
       margin-left: 35%;
@@ -72,15 +66,10 @@
     }
     img {
       position: absolute;
-      width: 30vw;
+      width: 25rem;
       right: 65%;
-      top: -90%;
-      @media screen and (min-width: 2560px) {
-        top: -130%;
-      }
-      @media screen and (width: 1024px) {
-        top: -50%;
-      }
+      top: $lamp-end-position;
+      animation: slideIn 0.5s ease-in-out;
     }
   }
   .body {
@@ -395,30 +384,6 @@
       }
     }
   }
-}
-
-.open-table-top {
-  transition: transform 500ms ease 0ms;
-  transform: translateY(-200px);
-  will-change: transform;
-}
-
-.open-table-bottom {
-  transition: transform 500ms ease 0ms;
-  transform: translateY(200px);
-  will-change: transform;
-}
-
-.close-table-top {
-  transition: transform 500ms ease 0ms;
-  transform: translateY(200px);
-  will-change: transform;
-}
-
-.close-table-bottom {
-  transition: transform 500ms ease 0ms;
-  transform: translateY(-200px);
-  will-change: transform;
 }
 
 .contact-btn {
