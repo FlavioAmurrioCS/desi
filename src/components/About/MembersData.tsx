@@ -26,30 +26,30 @@ const items = [
     src: rogerImg,
     altText: "Slide 2",
     memberName: "Roger Herbas",
-    jobPosition: "Lead Electrician",
-    details: `As the Lead Electrician of DESI, Roger is responsible for the day-to-day operations and
+    jobPosition: "Master Electrician",
+    details: `As the Master Electrician of DESI, Roger is responsible for the day-to-day operations and
     electrical installations. Roger started his career as an Apprentice with DESI working under Nick
     Dodd (former owner), he quickly became a Journeyman and assisted Nick in the day-to-day
-    operations of DESI. He is now the lead electrician and is well versed in all aspects of the trade.`,
+    operations of DESI. He is now the Master Electrician and is well versed in all aspects of the trade.`,
     email: "rherbas@desielectric.com",
     phone: "123456789",
     linkedIn: "Jeff's Bezos LinkedIn",
   },
-  {
-    // src: team4_img,
-    altText: "Slide 4",
-    memberName: "Nick Dodd",
-    jobPosition: "Master Electrician",
-    details: `Nick started his career in 1966 working for Local Union 26 Electrical Workers. His first job
-    was with Union Light and Power on a high-rise apartment building. After leaving Union Light and
-    Power he enrolled in the Apprenticeship Program. In the Apprenticeship Program, he worked with
-    each different union company for six months at a time, learning different phases of electrical work.`,
-    detailsCont: `After the fourth year, Nick took an exam to become a Journeyman Electrician and in 1982 he
-    started his own company called Dodd Electric Services. After 14 years Nick changed the name to Diversified Electric Services, Inc. and in 2018 transferred ownership to Neyer. Nick holds a Master Electrician license for Washington, D.C., Maryland, and Virginia.`,
-    email: "ndodd@desielectric.com",
-    phone: "123456789",
-    linkedIn: "Jeff's Bezos LinkedIn",
-  },
+  // {
+  //   // src: team4_img,
+  //   altText: "Slide 4",
+  //   memberName: "Nick Dodd",
+  //   jobPosition: "Master Electrician",
+  //   details: `Nick started his career in 1966 working for Local Union 26 Electrical Workers. His first job
+  //   was with Union Light and Power on a high-rise apartment building. After leaving Union Light and
+  //   Power he enrolled in the Apprenticeship Program. In the Apprenticeship Program, he worked with
+  //   each different union company for six months at a time, learning different phases of electrical work.`,
+  //   detailsCont: `After the fourth year, Nick took an exam to become a Journeyman Electrician and in 1982 he
+  //   started his own company called Dodd Electric Services. After 14 years Nick changed the name to Diversified Electric Services, Inc. and in 2018 transferred ownership to Neyer. Nick holds a Master Electrician license for Washington, D.C., Maryland, and Virginia.`,
+  //   email: "ndodd@desielectric.com",
+  //   phone: "123456789",
+  //   linkedIn: "Jeff's Bezos LinkedIn",
+  // },
 ];
 
 export default items;

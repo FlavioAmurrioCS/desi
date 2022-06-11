@@ -29,11 +29,17 @@ function Footer() {
         </div>
         <div className="footer__contact">
           <p>
-            7516 Lee Chapel Rd, Fairfax Station, VA 22039 <br />
-            Alexandria, VA 22315 <br />
+            1730 Rhode Island Ave NW - Suite 816 <br />
+            Washington, DC, 20036
+            <br />
             <a href={`tel:+${constants.COMPANY_PHONE}`}>
-              {" "}
+              {"📞"}
               {constants.COMPANY_PHONE}
+            </a>{" "}
+            <br />
+            <a href={`fax:+${constants.COMPANY_FAX}`}>
+              {"📠"}
+              {constants.COMPANY_FAX}
             </a>{" "}
             <br />
             <a

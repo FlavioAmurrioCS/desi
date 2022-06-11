@@ -55,7 +55,7 @@ export default function CustomizedModal({
           <p>{buttonTitle}</p>
         </div>
       </Button>
-      <Modal className="project-modal" isOpen={modal} toggle={toggle}>
+      {/* <Modal className="project-modal" isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>
           <h3>{modelTitle}</h3>
           <p>{modelSubtitle}</p>
@@ -78,7 +78,7 @@ export default function CustomizedModal({
             Close
           </Button>
         </ModalFooter>
-      </Modal>
+      </Modal> */}
     </div>
   );
 }

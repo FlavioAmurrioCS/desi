@@ -13,11 +13,11 @@ export default function MainServices() {
         />
         <Card className="row__card rounded-0" body>
           <CardTitle>
-            <h1>DMV's Finest Electricians</h1>
+            <h1>DMV's Most Reliable Electricians</h1>
           </CardTitle>
           <CardText>
             <p className="pb-2">
-              As a commercially focused enterprise, DESi Electric specializes in
+              As a commercially focused enterprise, DESI Electric specializes in
               the following three areas:
             </p>
             <ul className="ps-4">

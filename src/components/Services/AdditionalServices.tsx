@@ -11,7 +11,7 @@ export default function AdditionalServices() {
         <Card>
           <CardHeader>
             <h1>A Comprehensive View of Our Services</h1>
-            <p className="subtitle">Commercial Business Only</p>
+            <p className="subtitle">Commercial Business Focus</p>
           </CardHeader>
           <CardBody>
             <div className="inner__row">
