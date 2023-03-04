@@ -17,7 +17,7 @@ export default function StatementPurpose() {
         </h2>
       </div>
       <div className="body">
-        <p>{constants.STATMENT_PURPOSE}</p>
+        <p className="line-break">{constants.STATMENT_PURPOSE}</p>
       </div>
     </div>
   );

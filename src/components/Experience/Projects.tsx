@@ -5,7 +5,7 @@ import constants from "../constants";
 export default function Projects() {
   return (
     <div className="project-container">
-      <h3>Daily Work</h3>
+      <h3>Completed Projects</h3>
       <p className="subtitle">{constants.PASTWORK_INTRO}</p>
       <div className="project-gallery">
         {projects.map((project, i) => (
