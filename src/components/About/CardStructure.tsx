@@ -3,7 +3,7 @@ import { Card, CardImg, CardTitle, CardBody, CardSubtitle } from "reactstrap";
 export default function CardStructure(
   src: string,
   name: string,
-  jobPosition: string
+  jobPosition: string,
 ) {
   return (
     <Card className="member-title-card">
