@@ -21,7 +21,7 @@ export default function FormContainer() {
     axios
       .post(
         `https://www.enformed.io/${process.env.REACT_APP_EMAIL_TOKEN}/`,
-        input
+        input,
       )
       .then((response) => {
         if (response.statusText === "OK") {
